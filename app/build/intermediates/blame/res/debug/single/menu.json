@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/users/guest/a/athom909/240/SuperAsteroids/app/build/intermediates/res/merged/debug/menu/menu_import.xml",
+        "source": "/users/guest/a/athom909/240/SuperAsteroids/app/src/main/res/menu/menu_import.xml"
+    },
+    {
+        "merged": "/users/guest/a/athom909/240/SuperAsteroids/app/build/intermediates/res/merged/debug/menu/main.xml",
+        "source": "/users/guest/a/athom909/240/SuperAsteroids/app/src/main/res/menu/main.xml"
+    },
+    {
+        "merged": "/users/guest/a/athom909/240/SuperAsteroids/app/build/intermediates/res/merged/debug/menu/menu_main.xml",
+        "source": "/users/guest/a/athom909/240/SuperAsteroids/app/src/main/res/menu/menu_main.xml"
+    }
+]

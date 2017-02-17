@@ -1,0 +1,90 @@
+drop table if exists objects;
+drop table if exists asteroids;
+drop table if exists levels;
+drop table if exists levelObjects;
+drop table if exists levelAsteroids
+drop table if exists mainBodies;
+drop table if exists cannons;
+drop table if exists extraParts;
+drop table if exists engines;
+drop table if exists powerCores;
+
+create table objects {
+    id integer not null primary key autoincrement,
+    name varchar(255) not null
+}
+
+create table asteroids {
+    name varchar(255) not null,
+    image varchar(255) not null,
+    imageWidth int not null,
+    imageHeight int not null,
+    type varchar(255) not null
+}
+
+create table levels {
+    number int not null primary key,
+    title varchar(255) not null,
+    hint varchar(255) not null,
+    width int not null,
+    height int not null,
+    music varchar(255) not null,
+    //id int not null
+}
+
+create table levelObjects {
+    position varchar(255) not null,
+    objectId int not null,
+    scale real not null,
+    level int not null primary key
+}
+
+create table levelAsteroids {
+    number int not null,
+    asteroidId int not null,
+    level int not null primary key
+}
+
+create table mainBodies {
+    cannonAttach varchar(255) not null,
+    engineAttach varchar(255) not null,
+    extraAttach varchar(255) not null,
+    image varchar(255) not null,
+    imageWidth int not null,
+    imageHeight int not null
+}
+
+create table cannons {
+    attachPoint varchar(255) not null,
+    emitPoint varchar(255) not null,
+    image varchar(255) not null,
+    imageWidth int not null,
+    imageHeight int not null,
+    attackImage varchar(255) not null,
+    attackImageWidth int not null,
+    attackImageHeight int not null,
+    attackSound varchar(255) not null,
+    damage int not null
+}
+
+create table extraParts {
+    attachPoint varchar(255) not null,
+    image varchar(255) not null,
+    imageWidth int not null,
+    imageHeight int not null
+}
+
+create table engines {
+    baseSpeed int not null,
+    baseTurnRate int not null,
+    attachPoint varchar(255) not null,
+    image varchar(255) not null,
+    imageWidth int not null,
+    imageHeight int not null
+}
+
+create table powerCores {
+    cannonBoost int not null,
+    engineBoost int not null,
+    image varchar(255) not null
+}
